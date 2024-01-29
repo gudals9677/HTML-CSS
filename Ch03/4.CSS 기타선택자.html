@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +7,13 @@
     <!--
         날짜 : 2024/01/23
         이름 : 김형민
-        내용 : CSS기타선택자 실습
+        내용 : CSS 기타선택자 실습
     -->
     <style>
         /* 속성 선택자 */
         input[value] {
             color: white;
-            background-color: black;
+            background: black;
         }
 
         input[name=uid] {
@@ -35,22 +34,21 @@
         .box1:active {
             background: red;
         }
-
         .box2:hover {
-            background-color: blue;
+            background: blue;
         }
 
         /* 가상요소 선택자 */
-        #won > li::after{
-            content:'원';
+        #won > li::after {
+            content: '원';
         }
-        #dollar > li::before{
-            content:'$';
+        
+        #dollar > li::before {
+            content: '$';
         }
     </style>
 
 </head>
-
 <body>
     <h3>4.CSS 기타선택자</h3>
 
@@ -66,15 +64,15 @@
     <h4>가상요소선택자</h4>
     <ul id="won">
         <li>2,000</li>
+        <li>2,500</li>
         <li>3,000</li>
-        <li>4,000</li>
     </ul>
 
     <ul id="dollar">
         <li>2,000</li>
+        <li>2,500</li>
         <li>3,000</li>
-        <li>4,000</li>
     </ul>
-</body>
 
+</body>
 </html>
