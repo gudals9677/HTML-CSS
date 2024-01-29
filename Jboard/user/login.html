@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        /*초기화*/
+        *{
+         margin : 0;
+         padding: 0;
+         font: normal 12px "돋움";
+        }
+        ul,
+        ol{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color:black;
+        }
+        input,
+        textarea{outline: none;}
+        /* container */
+        #container {
+            width: 800px;
+            height: auto;
+            margin:0 auto;
+        }
+        /* header */
+        header{
+            width: 100%;
+            height: 40px;
+            background: #f7f7f7;
+            border-bottom: 1px solid #ebebeb;
+            box-sizing: border-box;
+        }
+
+        header > h3{
+            float: left;
+            font-weight: bold;
+            color: #777;
+            margin-top: 14px;
+            margin-left: 10px;
+        }
+        /* main */
+        main{
+            width: 100%;
+            height: auto;
+        }
+        main > section {}
+
+        /* login */
+        .login {
+            position:relative;
+            width: 360px;
+            height: auto;
+            border: 1px solid #cfded8;
+            box-sizing: border-box;
+            margin: 100px auto;
+        }
+        .login > form {}
+        .login > form > table {
+            margin-left: 52px;
+            margin-top: 30px;
+        }
+        .login > form > table tr {}
+        .login > form > table td {}
+        .login > form > table img {
+            width: 20px;
+        }
+        .login > form > table input {
+            width: 162px;
+            height: 22px;
+            margin-left: 6px;
+            margin-bottom: 4px;
+            border: 1px solid #e4eaec;
+            background:#f7f7f7;
+        }
+        .login > form > input[type=submit] {
+            position:absolute;
+            right: 48px;
+            top: 33px;
+            width: 60px;
+            height: 52px;
+            border: 1px solid #bebebe;
+            background-color: #fdfdfd;
+        }
+        .login > div {
+            width: 100%;
+            height: 100px;
+            background-color:#f5f6fa;
+            border-top:1px solid #cfded8;
+            margin-top:20px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .login > div > h3 {}
+        .login > div > p {
+            margin:10px 0;
+
+        }
+        .login > div > a {
+            float: right;
+        }
+        /* footer */
+        footer{
+            width: 100%;
+            height: 36px;
+            background: #f7f7f7;
+            border-top: 1px solid #ebebeb;
+            box-sizing: border-box;
+        }
+
+        footer > p {
+            float:right;
+            margin-top: 14px;
+            margin-bottom: 10px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h3>Jboard v1.0</h3>
+        </header>
+        <main>
+            <section class="login">
+                <form action="#">
+                    <table border="0">
+                        <tr>
+                            <td><img src="../images/login_ico_id.png" alt="아이디"></td>
+                            <td><input type="text" name="uid" placeholder="아이디 입력"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="../images/login_ico_pw.png" alt="비밀번호"></td>
+                            <td><input type="password" name="pass" placeholder="비밀번호 입력"></td>
+                        </tr>
+                        <input type="submit" value="로그인">
+                    </table>
+                </form>
+                <div>
+                    <h3>회원 로그인 안내</h3>
+                    <p>아직 회원이 아니시면 회원으로 가입하세요.</p>
+                    <a href="#">회원가입</a>
+                </div>
+            </section>
+
+
+        </main>
+        <footer>
+            <p>copyright ⓒ김형민</p>
+        </footer>
+    </div>
+</body>
+</html>
